@@ -15,6 +15,7 @@ import (
 	"github.com/99designs/gqlgen/graphql/introspection"
 	gqlparser "github.com/vektah/gqlparser/v2"
 	"github.com/vektah/gqlparser/v2/ast"
+	"encore.app/user"
 )
 
 // region    ************************** generated!.gotpl **************************
@@ -45,11 +46,13 @@ type DirectiveRoot struct {
 type ComplexityRoot struct {
 	Mutation struct {
 		Shorten func(childComplexity int, input string) int
+		CreateUser func(childComplexity int, input *user.CreateUserParams) int
 	}
 
 	Query struct {
 		Get  func(childComplexity int, id string) int
 		Urls func(childComplexity int) int
+		User func(childComplexity int, email string) int
 	}
 
 	URL struct {
@@ -125,7 +128,6 @@ func (e *executableSchema) Complexity(typeName, field string, childComplexity in
 		}
 
 		return e.complexity.URL.URL(childComplexity), true
-
 	}
 	return 0, false
 }
