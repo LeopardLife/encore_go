@@ -8,3 +8,7 @@ type ApiResponse[T any] struct {
 	Error   string `json:"error,omitempty"`
 	Details string `json:"details,omitempty"`
 }
+
+type DataAuth struct {
+	Username string `json:"username"`
+}
