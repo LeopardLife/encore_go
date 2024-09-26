@@ -1,4 +1,4 @@
-CREATE TABLE user_role (
+CREATE TABLE IF NOT EXISTS user_role (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     user_id UUID NOT NULL,
     role_id UUID NOT NULL,

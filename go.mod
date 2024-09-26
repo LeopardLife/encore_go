@@ -3,11 +3,6 @@ module encore.app
 go 1.23.0
 
 require (
-	github.com/coreos/go-oidc/v3 v3.11.0
-	golang.org/x/oauth2 v0.23.0
-)
-
-require (
 	github.com/bytedance/sonic v1.11.6 // indirect
 	github.com/bytedance/sonic/loader v0.1.1 // indirect
 	github.com/cilium/ebpf v0.11.0 // indirect
@@ -17,7 +12,6 @@ require (
 	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
 	github.com/derekparker/trie v0.0.0-20230829180723-39f4de51ef7d // indirect
 	github.com/gabriel-vasile/mimetype v1.4.3 // indirect
-	github.com/gin-contrib/sse v0.1.0 // indirect
 	github.com/go-delve/delve v1.23.0 // indirect
 	github.com/go-delve/liner v1.2.3-0.20231231155935-4726ab1d7f62 // indirect
 	github.com/go-playground/locales v0.14.1 // indirect
@@ -43,6 +37,7 @@ require (
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	github.com/spf13/cobra v1.7.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
+	github.com/stretchr/testify v1.9.0 // indirect
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
 	github.com/ugorji/go/codec v1.2.12 // indirect
 	go.starlark.net v0.0.0-20231101134539-556fd59b42f6 // indirect
@@ -55,7 +50,7 @@ require (
 )
 
 require (
-	encore.dev v1.37.0 // indirect
+	encore.dev v1.37.0
 	github.com/gin-gonic/gin v1.10.0
 	github.com/go-jose/go-jose/v4 v4.0.2 // indirect
 	github.com/jackc/pgpassfile v1.0.0 // indirect
